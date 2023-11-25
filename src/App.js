@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+const RandomItemSelector = () => {
+  const [selectedItem, setSelectedItem] = useState(null);
+
+  // Sample list of items with id and item name
+  const items = [
+    { id: 1, item: "Item 1" },
+    { id: 2, item: "Item 2" },
+    { id: 3, item: "Item 3" },
+    // Add more items here as needed
+  ];
+
+  const handleButtonClick = () => {
+    // Get a random index to select a random item from the list
+    const randomIndex = Math.floor(Math.random() * items.length);
+    const randomItem = items[randomIndex];
+    setSelectedItem(randomItem);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button onClick={handleButtonClick}>Select Random Item</button>
+      {selectedItem && (
+        <div>
+          <h3>Breakfast:</h3>
+          <p>Name : {selectedItem.item}</p>
+        </div>
+      )}
     </div>
   );
-}
+};
 
-export default App;
+export default RandomItemSelector;
