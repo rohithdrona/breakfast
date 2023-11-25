@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./App.css";
 const RandomItemSelector = () => {
   const [selectedItem, setSelectedItem] = useState(null);
 
@@ -37,10 +37,12 @@ const RandomItemSelector = () => {
   };
 
   return (
-    <div>
-      <button onClick={handleButtonClick}>Select Random Item</button>
+    <div className="container">
+      <button className="centered-button" onClick={handleButtonClick}>
+        Select Random Item
+      </button>
       {selectedItem && (
-        <div>
+        <div className="centered-data">
           <h3>Breakfast:</h3>
           <p>Name : {selectedItem.item}</p>
         </div>
