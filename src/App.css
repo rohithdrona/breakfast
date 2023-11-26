@@ -46,7 +46,8 @@
 
 .centered-button {
   background-color: red;
-  height: 10vh;
+  height: 6vh;
+  font-size: 3vh;
   margin-bottom: 20px; /* Adjust margin as needed */
 }
 
