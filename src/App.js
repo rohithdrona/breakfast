@@ -6,6 +6,21 @@ const defaultBreakfasts = [
   "Vegetable Bath",
   "Chapathi",
   "Bisibelebath",
+  "Vegetable Bath",
+  "Bisibele Bath",
+  "Rotti",
+  "Avaakki Pongal",
+  "Upittu",
+  "Chitranna",
+  "Avalakki",
+  "Guliyappa",
+  "Shavige",
+  "Pundigatti",
+  "Chapati",
+  "Khichdi",
+  "Pulao",
+  "Sandwich",
+  "Paratha",
 ];
 const defaultLunches = [
   "Dal Rice",
@@ -13,6 +28,11 @@ const defaultLunches = [
   "Sambar Rice",
   "Chole Rice",
   "Fried Rice",
+  "Roti Sabzi",
+  "Khichdi",
+  "Pulao",
+  "Sandwich",
+  "Paratha",
 ];
 const defaultDinners = [
   "Roti Sabzi",
@@ -20,6 +40,11 @@ const defaultDinners = [
   "Pulao",
   "Sandwich",
   "Paratha",
+  "Dal Rice",
+  "Rajma Rice",
+  "Sambar Rice",
+  "Chole Rice",
+  "Fried Rice",
 ];
 
 const recipes = {
