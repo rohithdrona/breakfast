@@ -163,10 +163,11 @@ export default function SimpleMealPlanner() {
           ))}
         </tbody>
       </table>
-
       <div style={{ marginTop: 20, textAlign: "center" }}>
+        <div>*** Future Enhancement ***</div>
         <button
           onClick={() => handleAddColumn("breakfast")}
+          disabled
           style={{
             marginRight: 10,
             padding: "8px 12px",
@@ -179,6 +180,7 @@ export default function SimpleMealPlanner() {
         </button>
         <button
           onClick={() => handleAddColumn("lunch")}
+          disabled
           style={{
             marginRight: 10,
             padding: "8px 12px",
@@ -191,6 +193,7 @@ export default function SimpleMealPlanner() {
         </button>
         <button
           onClick={() => handleAddColumn("dinner")}
+          disabled
           style={{
             padding: "8px 12px",
             borderRadius: 4,
