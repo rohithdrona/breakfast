@@ -57,6 +57,20 @@ const RandomItemSelector = () => {
           </div>
         </>
       )}
+      <button className="centered-button" onClick={handleButtonClick}>
+        Lunch
+      </button>
+      {selectedItem && (
+        <>
+          <div className="centered-data">
+            <h3>{selectedItem.item}</h3>
+            {selectedItem.variety &&
+              selectedItem.variety.map((eachitem) => {
+                return <div>{eachitem}</div>;
+              })}
+          </div>
+        </>
+      )}
     </div>
   );
 };
